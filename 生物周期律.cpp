@@ -1,9 +1,6 @@
 #include <stdio.h>
-
 #include <stdlib.h>
-
 #include <windows.h>
-
 #include <time.h>
 
 #define PHY 23
@@ -28,19 +25,19 @@ int specific_Date();
 
 void current_Time();
 
-int leap_Year(int birth, int cur);
+int  leap_Year(int birth, int cur);
 
-void judge(int total);
+void  judge(int total);
 
 /*-->Global variables<--*/
 
-unsigned int birth[3];
+unsigned  int birth[3];
 
-unsigned int curT[3];
+unsigned  int curT[3];
 
-int Days[12] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+int Days[12]  = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 
-/*-->Program entrance<--*/
+/*-->Program  entrance<--*/
 
 int main()
 
@@ -70,7 +67,7 @@ int main()
 
 /*-->Function body<--*/
 
-void inputBirthday(int *birth)
+void  inputBirthday(int *birth)
 
 {
 
@@ -98,7 +95,7 @@ void selectAction()
 
 {
 
-	int command, total;
+	int  command, total;
 
 	printf("\nPlease select the action you want to take:\n\t(1)Enquiry of today's biological rhythms.\n\t(2)Query the biological rhythm of a specific date\n");
 
@@ -140,7 +137,7 @@ int current_Date()
 
 	printf("\nYou have selected a biological rhythm to query the current date!\n");
 
-	int total, count;
+	int  total, count;
 
 	current_Time();
 
@@ -207,7 +204,7 @@ int leap_Year(int birth, int cur)
 
 {
 
-	int count = 0;
+	int  count = 0;
 
 	while (birth < cur)
 
